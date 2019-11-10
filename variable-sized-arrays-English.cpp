@@ -67,6 +67,112 @@ for(int i = 0; i < 5; i++)
 vec[0].push_back(5);
 cout << vec[0][0] << endl;
 
+// ================================================================================
+
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main()
+{
+    int n,q;
+cin >> n >> q;
+vector< vector<int> > a(n);
+
+// input each array
+for (int i=0;i<n;i++) {
+    int k;
+    cin >> k;
+
+    for (int j=0;j<k;j++) {
+        int data;
+        cin >> data;
+        a[i].push_back(data);
+    }
+}
+
+// do the queries
+for (int i=0;i<q;i++) {
+    int x,y;
+    cin >> x >> y;
+    cout << a[x][y] << endl;
+}
+
+    return 0;
+}
+// ================================================
+
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    
+ 
+    int noofrow,noofq;
+        int sizz,input;
+        int row,index;
+        std::vector<int> vc1;
+cout<<"Enter no of rows that you want for rows : " ;
+cin >> noofrow;
+cout<<"Enter no of question that you want to ask : ";
+cin >>noofq;
+
+vector< vector<int> > a(noofrow);
+//======================================================
+for(int i = 0; i < noofrow ; i++){
+        cout<< "How many Numbers you want to enter : ";
+        cin >> sizz;
+        cout << "Input Data : " ;
+        for (int i = 0; i < sizz; i++) {//for taking input form the user
+            cin >> input;
+            vc1.push_back(input);
+        }
+        
+        cout << "print data of vector : " ;
+        for (int i = 0; i < sizz; i++) {
+            cout << vc1[i] << " " ;
+        }
+}
+        cout<<"\n";
+       /* for(int i = 0 ; i< noofq; i++){
+            int index;
+        cout<< "Enter question ";
+        cin >> row >> index;
+        cout << vc1[row][index] <<endl;;
+        }*/
+        for (int i=0;i<noofq;i++) {
+    int x,y;
+    cin >> x >> y;
+    cout << a[x][y] << endl;
+}
+        
+
+}
+        
+        
+        
+        
 
 
 
