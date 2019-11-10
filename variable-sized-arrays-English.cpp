@@ -38,7 +38,38 @@ for(int i = 0; i < noofrow ; i++){
       }  
 
 }
-        
+// =======================================
+
+vector<vector<int>> vec; // declare 2D vector
+
+    for (int i=0; i<=3; i++) {
+        vector<int> row;  // create a row vector which adds a row to vec
+        for (int j=0; j<=4; j++) {
+            row.push_back(j*10); // push elements 0,10,20,30,40 to row 
+        }
+        vec.push_back(row); // add this row to vec
+        // Repeat this procedure 4 times to make a 4*5 2D vector
+    }
+
+    cout<<"output is "<<vec[2][4]; // output is 40
+// ============================================
+
+Declaring a two dimensional vector is similar to declaring an array. You can also use it in same way...
+
+vector<vector<int> > vec;
+
+for(int i = 0; i < 5; i++)
+{
+    vector<int> row;
+    vec.push_back(row);
+}
+
+vec[0].push_back(5);
+cout << vec[0][0] << endl;
+
+
+
+
         
         
         
