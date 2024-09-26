@@ -48,6 +48,8 @@ using namespace std;
 
 int main() {
 	// Complete the program
+string input1; //Should be declared before
+string input2;
  
   string str_concat;
   cin >> input1 >> input2;
